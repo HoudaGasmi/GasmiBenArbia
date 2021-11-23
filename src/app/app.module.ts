@@ -8,6 +8,7 @@ import { ErrorComponent } from './error/error.component';
 import { MenuComponent } from './menu/menu.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     ErrorComponent,
     MenuComponent,
     AccueilComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
