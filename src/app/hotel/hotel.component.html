@@ -1,1 +1,6 @@
-<p>hotel works!</p>
+<div class="container">
+    <h1>Hotels</h1>
+    <div *ngFor="let h of lesHotels" class="list-group">
+        <app-list-hotel [hotel]="h" class="list-group-item"></app-list-hotel>
+    </div>
+    </div>

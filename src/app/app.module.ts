@@ -9,6 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { ListHotelComponent } from './list-hotel/list-hotel.component';
+import { PictureComponent } from './picture/picture.component';
+import { ImageComponent } from './image/image.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { LoginComponent } from './login/login.component';
     MenuComponent,
     AccueilComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    ListHotelComponent,
+    PictureComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

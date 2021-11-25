@@ -4,5 +4,8 @@ img {
     margin: 10px;
 }
 h4{
-    color: rgb(94, 119, 94);
+    color: rgb(18, 201, 214);
+}
+h4:hover{
+color:blue;
 }

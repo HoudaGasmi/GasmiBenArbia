@@ -1,10 +1,12 @@
+import { Picture } from "./picture";
+
 export class Hotel {
     constructor (
-    public nom: string,
-    public prix: number, 
-    public image: string,
-    public localisation: string,
-    public nbEtoiles: string,
-    public promotion: boolean
+    public nom?: string,
+    public prix?: number, 
+    public image?: Picture[],
+    public region?: string,
+    public nbEtoiles?: string,
+    public promotion?: boolean
     ){}
 }
