@@ -17,12 +17,14 @@ export class HotelService {
     new Hotel("Blue Marine Hotel & Thalasso",92,
     [
       new Picture("/assets/Blue.jpg","/assets/Blue1.jpg","/assets/Blue2.jpg")],"Hammamet - Tunisie","assets/4etoile.png",false),
+      new Hotel('Hotel La Cigale',140,
+      [new Picture ("/assets/cigal1.jpg","/assets/cigal4.jpg","/assets/cigal2.jpg","/assets/cigal3.jpg","/assets/cigal.jpg")],'Tabarka - Tunisie','/assets/5etoile.png',false),
+    new Hotel('Hotel Thabraca',99,
+    [new Picture ("/assets/tabraka1.jpg","/assets/tabraka2.jpg","/assets/tabraka3.jpg","/assets/tabraka4.jpg","/assets/tabraka.jpg")],'Tabarka - Tunisie','/assets/4etoile.png',true),
+    new Hotel('Hotel Mövenpick ',225,
+    [new Picture ("/assets/mvmpik.jpg","/assets/mvp.jpg","/assets/mvp1.jpg","/assets/mvp2.jpg","/assets/mvp3.jpg")],'Sousse - Tunisie','/assets/5etoile.png',false)
     
     
-
-
-
-
   ]
   constructor() { }
 

@@ -8,12 +8,55 @@
     Prix: {{hotel.prix | number:'2.3'}} DT<br/>
     <span *ngIf="hotel.promotion"><button class="btn btn-success">En Promotion</button></span>
     <br/>
-    <button (click)="onAfficher()" class="btn btn-link">Détails</button>
+    <button (click)="onAfficher()" class="btn btn-link">Détails</button></div></div>
     <div *ngIf="display">
-    <li *ngFor="let i of hotel.image">
-          <app-image [im]="i"></app-image>
-    </li>
-  </div>
+    <div *ngFor="let i of hotel.image">
+        <br/><app-image [im]="i"></app-image>
+    </div>
+    <br/>
+    <h5>Services & équipements</h5>
+    
+    <table>
+        <tr>
+        <td>Climatisation</td> <td>Restaurant</td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<td> Télévision</td></tr>
+        <tr>
+        <td>Club de remise en forme  </td> <td> Massage</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <td>Piscine</td></tr>
+        <tr>
+        <td> Téléphone avec ligne directe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> <td>Plage</td></tr>
+        
+    </table>
+    <br/>
+
+    <h5>Dates & Tarifs</h5>
+    <table>
+    <tr>
+    <td>Date d'arrivée&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> <td><input type="date"></td></tr>
+    <tr>
+    <td>Date de départ </td> <td><input type="date"></td></tr>
+    <tr>
+    <td>Adulte(s)</td> <td><input type="number"></td></tr>
+    <tr>
+    <td>Enfant(s)</td> <td><input type="number"></td></tr>
+    <tr>
+    <td></td><td><button class="btn btn-primary">Vérifier la disponibilité</button></td></tr>
+    </table>
+    <br/>
+
+    <h5>Chambres</h5>
+    <ul>
+       <li>Chambre Double-Standard</li>
+       <li>Chambre Single- Standard</li>
+       <li>Chambre Double- Supérieure</li>
+       <li>Chambre Triple- Supérieure</li>
+       <li> Suite Sénior Double.</li>
+       <li> Suite Junior 2 Pax</li>
+    </ul>
+    <h5>Pensions</h5>
+    <ul>
+        <li>Logement Petit Déjeuner</li>
+        <li>Demi Pension</li>
+        <li>Pension Complète</li>
+    </ul>
   
-  </div>
-  </div>
+  
+</div>
