@@ -3,3 +3,11 @@ img{
    height: auto;
    margin:0px 0px;
 }
+.img{
+   width: 30px;
+   height: 30px;
+}
+.png{
+   width: 160px;
+   height: 40px;
+}

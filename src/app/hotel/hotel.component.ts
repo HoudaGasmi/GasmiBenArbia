@@ -10,6 +10,20 @@ import { HotelService } from '../hotel.service';
 export class HotelComponent implements OnInit {
 
 lesHotels:Hotel[]=[];
+chercher(){
+  var __FOUND = -1;
+for(var i=0; i<this.lesHotels.length; i++) {
+	if(this.lesHotels[i].nom == document.getElementById('name')?.textContent ) {
+		// __FOUND is set to the index of the element
+		__FOUND = i;
+		break;
+	}
+}
+
+// // On success __FOUND will contain the index of the element
+// // On failure it will contain -1  
+// console.log(__FOUND);
+}
   constructor(private hotelservice:HotelService ) { }
 
   ngOnInit(): void {

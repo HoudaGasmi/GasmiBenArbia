@@ -1,5 +1,5 @@
 <div class="container">
-<form>
+<form [formGroup]="f" (ngSubmit)="onSubmit()">
     
                          <div class="picture-container">
                               <div class="picture">
@@ -13,13 +13,17 @@
 
                           <div class="col-xs-2">
                             <label>Name</label>
-                            <input name="firstname" type="text"  class="form-control">
+                            <input name="firstname" type="text"  class="form-control" formControlName="nom">
                           </div>
                           
                       
                           <div class="col-xs-2" >
                               <label>Password</label>
-                              <input name="password" type="password" class="form-control">
-                          </div></div>
+                              <input name="password" type="password" class="form-control" formControlName="mdp">
+                          </div></div><br/>
+                          <div class="col-xs-2" >
+                            <button type="button" class="btn btn-secondary">Connecter</button> &nbsp; <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
+                            
+                        </div>
                     
         </form></div>

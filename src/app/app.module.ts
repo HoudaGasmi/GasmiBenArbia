@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { ListHotelComponent } from './list-hotel/list-hotel.component';
 import { PictureComponent } from './picture/picture.component';
 import { ImageComponent } from './image/image.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ImageComponent } from './image/image.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

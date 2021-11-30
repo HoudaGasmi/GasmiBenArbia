@@ -1,5 +1,6 @@
 <div class="container">
-    <input class="r" type="text" name="recherche" size="80" placeholder="Rechercher" ><img src="/assets/R.png">
+    <input class="r" type="text" id="name" name="recherche" size="80" placeholder="Rechercher" ><div class="fa fa-search" (click)="chercher()" ></div>
+
     <h1>HOTELS</h1>
     <div *ngFor="let h of lesHotels" class="list-group">
         <app-list-hotel [hotel]="h" class="list-group-item"></app-list-hotel>
