@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Hotel } from './hotel';
+import { Login } from './login';
 import { Picture } from './picture';
 
 @Injectable({
@@ -26,9 +28,20 @@ export class HotelService {
     
     
   ]
+   login:Login[]=[
+     new Login("Houda Gasmi","123456"),
+     new Login("Oumaima Ben Arbia","123456")
+   ]
   constructor() { }
 
   getHotel(){
     return this.lesHotels;
   }
+  getLogin(){
+    return this.login;
+  }
+  ajouter(f:Hotel){
+    this.lesHotels.push(f);
+  }
+  
 }

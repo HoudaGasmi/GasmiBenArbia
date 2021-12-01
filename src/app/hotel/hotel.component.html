@@ -1,8 +1,17 @@
 <div class="container">
-    <input class="r" type="text" id="name" name="recherche" size="80" placeholder="Rechercher" ><div class="fa fa-search" (click)="chercher()" ></div>
-
+    <form [formGroup]="f">
+    <input class="r" type="text" formControlName="recherche" value="" size="80" placeholder="Rechercher" (ngModule)="chaine"><div class="fa fa-search" (click)="getRecherche()"></div>
+    </form>
     <h1>HOTELS</h1>
     <div *ngFor="let h of lesHotels" class="list-group">
-        <app-list-hotel [hotel]="h" class="list-group-item"></app-list-hotel>
+        <span *ngIf="f.controls.recherche.value==''">
+            <app-list-hotel [hotel]="h" class="list-group-item"></app-list-hotel>
+        </span>    
     </div>
+    <span *ngIf="b==true">
+        <div *ngFor="let x of hotel" class="list-group">
+            <app-list-hotel [hotel]="x" class="list-group-item"></app-list-hotel>
+        </div>
+    </span>
     </div>
+    
