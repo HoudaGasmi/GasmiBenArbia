@@ -12,7 +12,7 @@ export class HotelService {
   lesHotels:Hotel[]=[
     new Hotel("Royal Kenz Thalasso & Spa",102,
     [
-      new Picture("/assets/thalasso.jpg","/assets/sousse.jpg","/assets/kenz.jpg")],"Sousse - Tunisie","/assets/5etoile.png",true),
+      new Picture("/assets/thalasso.jpg","/assets/sousse.jpg","/assets/kenz.jpg","/assets/thalasso1.jpg","/assets/thalasso2.jpg")],"Sousse - Tunisie","/assets/5etoile.png",true),
     new Hotel("Steigenberger Marhaba Thalasso",150,
     [
       new Picture("/assets/hammamet3.jpg","/assets/hammamet1.jpg","/assets/hammamet1.jpg")],"Hammamet - Tunisie","/assets/4etoile.png",true),
@@ -24,8 +24,10 @@ export class HotelService {
     new Hotel('Hotel Thabraca',99,
     [new Picture ("/assets/tabraka1.jpg","/assets/tabraka2.jpg","/assets/tabraka3.jpg","/assets/tabraka4.jpg","/assets/tabraka.jpg")],'Tabarka - Tunisie','/assets/4etoile.png',true),
     new Hotel('Hotel Mövenpick ',225,
-    [new Picture ("/assets/mvmpik.jpg","/assets/mvp.jpg","/assets/mvp1.jpg","/assets/mvp2.jpg","/assets/mvp3.jpg")],'Sousse - Tunisie','/assets/5etoile.png',false)
-    
+    [new Picture ("/assets/mvmpik.jpg","/assets/mvp.jpg","/assets/mvp1.jpg","/assets/mvp2.jpg","/assets/mvp3.jpg")],'Sousse - Tunisie','/assets/5etoile.png',false),
+    new Hotel("Royal Thalassa Monastir",99,
+    [
+      new Picture("/assets/monastir.jpg","/assets/monastir1.jpg","/assets/monastir2.jpg","/assets/monastir3.jpg","/assets/monastir4.jpg")],"Monastir - Tunisie","/assets/4etoile.png",true)
     
   ]
    login:Login[]=[
