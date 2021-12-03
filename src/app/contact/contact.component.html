@@ -1,7 +1,8 @@
-<form>
+<form  [formGroup]="f">
     <br>
     <img src="/assets/contact.png"><br>
-    <textarea rows="5" cols="50" placeholder="Merci de nous laisser votre avis : ........................"></textarea>
+    <textarea rows="5" cols="50" placeholder="Merci de nous laisser votre avis : ........................" formControlName="c"></textarea><br>
+    <button type="button" class="btn btn-secondary">Commenter</button>&nbsp;<button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
 </form>
 <br><br><br><br><br><br><br><br>
 

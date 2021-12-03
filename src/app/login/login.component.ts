@@ -12,20 +12,26 @@ export class LoginComponent implements OnInit {
   login:Login[]=[];
 f=new FormGroup({
 });
-  onSubmit(){
-    console.log(this.f.value); 
-    console.log(this.f.controls.nom.value);
-    console.log(this.f.controls.mdp.value);
-  }
+  
   reset(){
     this.f.reset();
   }
+  display:boolean = false;
+  onAfficher(){
+  this.display= !this.display;
+  }
+  onAfficher1(){
+    this.display= !this.display;
+    }
+    onAfficher2(){
+      this.display= !this.display;
+      }
   constructor(private fb:FormBuilder,private server:HotelService) { }
 
   ngOnInit(): void {
     this.f = this.fb.group({
       nom:['', Validators.required],
-      mdp: ['', [Validators.required, Validators.pattern('^[A-Z][a-zA-Z]+$')]],
+      mdp: ['', Validators.required],
       });
       this.login=this.server.getLogin();
    }

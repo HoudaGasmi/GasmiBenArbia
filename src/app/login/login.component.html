@@ -1,11 +1,9 @@
 <div class="container">
-<form [formGroup]="f" (ngSubmit)="onSubmit()">
+<form [formGroup]="f">
     <div class="picture-container">
       <div class="picture">
         <img src="assets/default-avatar.png" />
-        <input type="file" id="wizard-picture" >
-      </div>
-      <h6>Choose Picture</h6>
+      </div><br>
     </div>
                       
     <div class="form-group row">
@@ -13,7 +11,7 @@
         <label>Name</label>
         <input type="text"  class="form-control" formControlName="nom">
       </div>
-       <div class="alert alert-danger" *ngIf="name.errors?.required && name.dirty">
+       <div class="alert alert-danger" *ngIf="name.errors?.required && name.touched">
         Le nom est obligatoire
         </div> 
         <!-- <div *ngIf="isValidPattern()" class="alert alert-warning">
@@ -23,21 +21,52 @@
         <label>Password</label>
         <input type="password" class="form-control" formControlName="mdp">
       </div>
-      <div class="alert alert-danger" *ngIf="password.errors?.required && password.dirty">
+      <div class="alert alert-danger" *ngIf="password.errors?.required && password.touched">
         Le mot de passe est obligatoire
         </div> 
     </div>
       <br/>
     <div class="col-xs-2" >
-    <button type="submit" class="btn btn-secondary" (click)="connecter()">Connecter</button> &nbsp;
+    <button type="submit" class="btn btn-secondary" [disabled]="!connecter()" (click)="connecter()">Connecter</button> &nbsp;
     <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
     <div *ngIf="connecter()"> 
-      <select class="form-select">
+      <p>Veuillez choisir une opération :</p>
+      <button (click)="onAfficher()" class="btn btn-link">Ajouter</button>
+    <div *ngIf="display">
+    
+      <input type="text">
+    
+      <!-- <select class="form-select">
         <option></option>
         <option >Ajouter</option>
         <option>Modifier</option>
         <option>Supprimer</option>
-      </select>
+      </select> -->
+    </div>
+    <button (click)="onAfficher2()" class="btn btn-link">Modifier</button>
+    <div *ngIf="display">
+    
+      <input type="text">
+    
+      <!-- <select class="form-select">
+        <option></option>
+        <option >Ajouter</option>
+        <option>Modifier</option>
+        <option>Supprimer</option>
+      </select> -->
+    </div>
+    <button (click)="onAfficher1()" class="btn btn-link">Supprimer</button>
+    <div *ngIf="display">
+    
+      <input type="text">
+    
+      <!-- <select class="form-select">
+        <option></option>
+        <option >Ajouter</option>
+        <option>Modifier</option>
+        <option>Supprimer</option>
+      </select> -->
+    </div>
     </div>
      <br><br>
     </div>
