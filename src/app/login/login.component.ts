@@ -10,32 +10,32 @@ import { Login } from '../login';
 })
 export class LoginComponent implements OnInit {
   login:Login[]=[];
-f=new FormGroup({
-});
-  onSubmit(){
-    console.log(this.f.value); 
-    console.log(this.f.controls.nom.value);
-    console.log(this.f.controls.mdp.value);
-  }
+  f=new FormGroup({});
+  
   reset(){
     this.f.reset();
   }
+  
   constructor(private fb:FormBuilder,private server:HotelService) { }
 
   ngOnInit(): void {
     this.f = this.fb.group({
-      nom:['', Validators.required],
-      mdp: ['', [Validators.required, Validators.pattern('^[A-Z][a-zA-Z]+$')]],
-      });
-      this.login=this.server.getLogin();
-   }
+      mdp :['', Validators.required],
+      nom : ['', Validators.required],
+    });
+    this.login=this.server.getLogin();
+  }
 
-   get name(){
+  get name(){
     return this.f.controls.nom;
   }
-   get password(){
+  get password(){
    return this.f.controls.mdp;
-   }
+  }
+
+  get op(){
+    return this.f.controls.op.value;
+  }
 
    connecter(){
      for (let i = 0; i < this.login.length; i++) {
@@ -46,16 +46,9 @@ f=new FormGroup({
      return false;
     
    }
-
    
-   Ajouter(){
+   ajouter(){
      
    }
 
-
-
-  // isValidPattern():boolean{
-  //   return this.f.controls['nom'].errors?.pattern &&
-  //   this.f.controls['nom'].dirty;
-  //   }
 }

@@ -13,6 +13,7 @@ import { ListHotelComponent } from './list-hotel/list-hotel.component';
 import { PictureComponent } from './picture/picture.component';
 import { ImageComponent } from './image/image.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BTTComponent } from './btt/btt.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     ListHotelComponent,
     PictureComponent,
-    ImageComponent
+    ImageComponent,
+    BTTComponent
   ],
   imports: [
     BrowserModule,
