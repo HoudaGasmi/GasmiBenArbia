@@ -21,7 +21,7 @@ export class HotelComponent implements OnInit {
   );
   getRecherche(){
     for (let i =0;i<this.lesHotels.length;i++) {
-      if(this.lesHotels[i].region==this.f.controls.recherche.value)
+      if((this.lesHotels[i].region==this.f.controls.recherche.value)||(this.lesHotels[i].prix==this.f.controls.recherche.value))
       {this.hotel.push(this.lesHotels[i]);
         this.b=true;
         console.log(true) ;}

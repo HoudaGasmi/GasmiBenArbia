@@ -31,44 +31,28 @@
     <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
     <div *ngIf="connecter()"> 
       <p>Veuillez choisir une opération :</p>
-      <button (click)="onAfficher()" class="btn btn-link">Ajouter</button>
-    <div *ngIf="display">
+      <button (click)="onAfficher()" class="btn btn-secondary">Ajouter</button>&nbsp;
+      <button (click)="onAfficher1()" class="btn btn-secondary">Modifier</button>&nbsp;
+      <button (click)="onAfficher2()" class="btn btn-secondary">Supprimer</button><br>
     
-      <input type="text">
-    
-      <!-- <select class="form-select">
-        <option></option>
-        <option >Ajouter</option>
-        <option>Modifier</option>
-        <option>Supprimer</option>
-      </select> -->
+      <div *ngIf="display">
+      <br/>
+      <fieldset>
+      Nom <input type="text" formControlName="name">    Prix <input type="number" formControlName="prix"><br/><br/>
+      Nombre d'étoiles <input type="number" formControlName="etoile">   Promotion <input type="text" formControlName="boolean"><br/><br/>
+      <button class="btn btn-secondary">Ajouter</button>
+      </fieldset>
+      </div>
+      <div *ngIf="display1">
+      <br/>
+      Nom <input type="text" formControlName="name">    Prix <input type="number" formControlName="prix"><br/><br/>
+      Nombre d'étoiles <input type="number" formControlName="etoile">   Promotion <input type="text" formControlName="boolean">
+      </div>
+      <div *ngIf="display2">
+      <br/>
+      ID <input type="text" formControlName="id">
+      </div>
     </div>
-    <button (click)="onAfficher2()" class="btn btn-link">Modifier</button>
-    <div *ngIf="display">
-    
-      <input type="text">
-    
-      <!-- <select class="form-select">
-        <option></option>
-        <option >Ajouter</option>
-        <option>Modifier</option>
-        <option>Supprimer</option>
-      </select> -->
-    </div>
-    <button (click)="onAfficher1()" class="btn btn-link">Supprimer</button>
-    <div *ngIf="display">
-    
-      <input type="text">
-    
-      <!-- <select class="form-select">
-        <option></option>
-        <option >Ajouter</option>
-        <option>Modifier</option>
-        <option>Supprimer</option>
-      </select> -->
-    </div>
-    </div>
-     <br><br>
-    </div>
+  </div>
 </form>
 </div>

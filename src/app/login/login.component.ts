@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Hotel } from '../hotel';
 import { HotelService } from '../hotel.service';
 import { Login } from '../login';
 
@@ -12,20 +13,25 @@ export class LoginComponent implements OnInit {
   login:Login[]=[];
 f=new FormGroup({
 });
+lesHotels:Hotel[]=[];
   
   reset(){
     this.f.reset();
   }
   display:boolean = false;
+  display1:boolean = false;
+  display2:boolean = false;
+ 
   onAfficher(){
-  this.display= !this.display;
+    this.display= !this.display;
   }
   onAfficher1(){
-    this.display= !this.display;
-    }
-    onAfficher2(){
-      this.display= !this.display;
-      }
+    this.display1= !this.display1;
+  }
+  onAfficher2(){
+    this.display2= !this.display2;
+  }
+
   constructor(private fb:FormBuilder,private server:HotelService) { }
 
   ngOnInit(): void {
@@ -53,15 +59,4 @@ f=new FormGroup({
     
    }
 
-   
-   Ajouter(){
-     
-   }
-
-
-
-  // isValidPattern():boolean{
-  //   return this.f.controls['nom'].errors?.pattern &&
-  //   this.f.controls['nom'].dirty;
-  //   }
-}
+  }

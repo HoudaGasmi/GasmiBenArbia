@@ -2,10 +2,16 @@ img{
     height: 200px;
     width: 300px;
 }
-form{text-align: center;}
-.c1{height: 80px; width: 80px;}
-.c2{height: 100px; width: 100px;}
-div{
+.c1{
+    height: 80px; 
+    width: 80px;
+}
+.c2{
+    height: 100px;
+     width: 100px;
+    }
+.c{
     text-align: center;
     background-color: grey;
 }
+

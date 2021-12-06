@@ -1,14 +1,66 @@
-<form  [formGroup]="f">
-    <br>
-    <img src="/assets/contact.png"><br>
-    <textarea rows="5" cols="50" placeholder="Merci de nous laisser votre avis : ........................" formControlName="c"></textarea><br>
-    <button type="button" class="btn btn-secondary">Commenter</button>&nbsp;<button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
-</form>
-<br><br><br><br><br><br><br><br>
+<div class="container">
+    <br/>
+<h3 class="font-weight-bold">Nous contacter</h3>
+<br/>
+<form  [formGroup]="f" (ngSubmit)="method()">
+    <div class="row g-3">
+    <div class="col-md-4 col-12">
+    <select class="form-select" value="Civilité*" vformControlName="civ">
+        <option>Civilité*</option>
+        <option>Mr</option>
+        <option>Mme</option>
+    </select>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <input type="text" placeholder="Prénom*" formControlName="prenom" class="form-control" required>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <input type="text" placeholder="Nom*" formControlName="nom" class="form-control" required>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <input type="email" placeholder="E-mail*" formControlName="mail" class="form-control" required>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <input type="text" placeholder="Téléphone*" formControlName="tel" class="form-control" required>
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <input type="text" placeholder="Adresse" formControlName="addresse" class="form-control">
+    </div>
+    </div>
+    <div class="col-md-4 col-12">
+    <div class="form-group">
+    <textarea rows="1" placeholder="Message*" formControlName="message" class="form-control" required></textarea><br>
+    </div>
+    </div>
+    <div class="col-md-12 text-end">
+    <button type="submit" class="btn btn-secondary">Envoyer</button>&nbsp;
+    <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button>
+    </div>
+    </div>
+    </form>
+    </div> 
+    <br><br><br><br><br><br><br><br>
+    <div class="c">
+        <img src="/assets/local.png"  class="c1"> Tunisie, Sokra, Rue3200
+        <img src="/assets/mail.png" class="c2"> BestTunisiaTravel@yahoo.fr     
+        <img src="assets/tel.png" class="c1"> 70111222
+    </div> 
 
 
-<div>
-    <img src="/assets/local.png"  class="c1"> Tunisie, Sokra, Rue3200
-    <img src="/assets/mail.png" class="c2"> BestTunisiaTravel@yahoo.fr     
-    <img src="assets/tel.png" class="c1"> 70111222
-</div> 
+
+
+
+
+
+
+
+     <!-- <img src="/assets/contact.png"><br> -->
