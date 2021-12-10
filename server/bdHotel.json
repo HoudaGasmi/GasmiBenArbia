@@ -9,7 +9,7 @@
                 "image2":"/assets/sousse.jpg",
                 "image3":"/assets/kenz.jpg",
                 "image4":"/assets/thalasso1.jpg",
-                "image5":"/assets/thalasso2.jpg",
+                "image5":"/assets/thalasso2.jpg"
             },
             "region":"Sousse",
             "nbEtoiles":"/assets/5etoile.png",
@@ -24,26 +24,131 @@
                 "image2":"/assets/mvp.jpg",
                 "image3":"/assets/mvp1.jpg",
                 "image4":"/assets/mvp2.jpg",
-                "image5":"/assets/mvp3.jpg",
+                "image5":"/assets/mvp3.jpg"
             },
             "region":"Sousse",
             "nbEtoiles":"/assets/5etoile.png",
             "promotion":false
         },
         {
-            "id":"a",
-            "nom":"",
-            "prix":,
+            "id":"c",
+            "nom":"Steigenberger Marhaba Thalasso",
+            "prix":150,
             "image":{
-                "image1":"",
-                "image2":"",
-                "image3":"",
-                "image4":"",
-                "image5":"",
+                "image1":"/assets/hammamet3.jpg",
+                "image2":"/assets/hammamet1.jpg",
+                "image3":"/assets/hammamet.jpg",
+                "image4":"/assets/hammamet4.jpg",
+                "image5":"/assets/hammamet2.jpg"
             },
-            "region":"",
-            "nbEtoiles":"",
-            "promotion":""
+            "region":"Hammamet",
+            "nbEtoiles":"/assets/4etoile.png",
+            "promotion":true
         },
+        {
+            "id":"d",
+            "nom":"Blue Marine Hotel & Thalasso",
+            "prix":92,
+            "image":{
+                "image1":"/assets/Blue.jpg",
+                "image2":"/assets/Blue1.jpg",
+                "image3":"/assets/Blue2.jpg",
+                "image4":"/assets/Blue3.jpg",
+                "image5":"/assets/Blue4.jpg"
+            },
+            "region":"Hammamet",
+            "nbEtoiles":"assets/4etoile.png",
+            "promotion":false
+        },
+        {
+            "id":"e",
+            "nom":"Hotel La Cigale",
+            "prix":140,
+            "image":{
+                "image1":"/assets/cigal1.jpg",
+                "image2":"/assets/cigal4.jpg",
+                "image3":"/assets/cigal2.jpg",
+                "image4":"/assets/cigal3.jpg",
+                "image5":"/assets/cigal.jpg"
+            },
+            "region":"Tabarka",
+            "nbEtoiles":"/assets/5etoile.png",
+            "promotion":false
+        },
+        {
+            "id":"f",
+            "nom":"Hotel Thabraca",
+            "prix":99,
+            "image":{
+                "image1":"/assets/tabraka1.jpg",
+                "image2":"/assets/tabraka2.jpg",
+                "image3":"/assets/tabraka3.jpg",
+                "image4":"/assets/tabraka4.jpg",
+                "image5":"/assets/tabraka.jpg"
+            },
+            "region":"Tabarka",
+            "nbEtoiles":"/assets/4etoile.png",
+            "promotion":true
+        },
+        {
+            "id":"g",
+            "nom":"Iberostar Selection Kuriat Palace",
+            "prix":174,
+            "image":{
+                "image1":"/assets/monastir5.jpg",
+                "image2":"/assets/monastir6.jpg",
+                "image3":"/assets/monastir7.jpg",
+                "image4":"/assets/monastir8.jpg",
+                "image5":"/assets/monastir9.jpg"
+            },
+            "region":"Monastir",
+            "nbEtoiles":"/assets/5etoile.png",
+            "promotion":true
+        },
+        {
+            "id":"h",
+            "nom":"Royal Thalassa Monastir",
+            "prix":153,
+            "image":{
+                "image1":"/assets/monastir.jpg",
+                "image2":"/assets/monastir1.jpg",
+                "image3":"/assets/monastir2.jpg",
+                "image4":"/assets/monastir3.jpg",
+                "image5":"/assets/monastir4.jpg"
+            },
+            "region":"Monastir",
+            "nbEtoiles":"/assets/4etoile.png",
+            "promotion":true
+        },
+        {
+            "id":"i",
+            "nom":"Iberostar Royal El Mansour",
+            "prix":156,
+            "image":{
+                "image1":"/assets/mahdia.jpg",
+                "image2":"/assets/mahdia1.jpg",
+                "image3":"/assets/mahdia2.jpg",
+                "image4":"/assets/mahdia3.jpg",
+                "image5":"/assets/mahdia4.jpg"
+            },
+            "region":"Mahdia",
+            "nbEtoiles":"/assets/5etoile.png",
+            "promotion":true
+        },
+        {
+            "id":"j",
+            "nom":"Mahdia Palace",
+            "prix":138,
+            "image":{
+                "image1":"/assets/mahdia5.jpg",
+                "image2":"/assets/mahdia6.jpg",
+                "image3":"/assets/mahdia7.jpg",
+                "image4":"/assets/mahdia8.jpg",
+                "image5":"/assets/mahdia9.jpg"
+            },
+            "region":"Mahdia",
+            "nbEtoiles":"/assets/4etoile.png",
+            "promotion":false
+        }
     ]
 }
