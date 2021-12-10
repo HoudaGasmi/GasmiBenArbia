@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -16,11 +17,12 @@ export class ContactComponent implements OnInit {
   addresse : new FormControl('',[Validators.required])
   
   } );
-  constructor() { }
 
   reset(){
     this.f.reset();
   }
+  constructor() { }
+
   ngOnInit(): void {
   }
   method(){

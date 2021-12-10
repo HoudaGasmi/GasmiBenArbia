@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:"accueil",component:AccueilComponent},
   {path:"hotel",component:HotelComponent},
   {path:"contact",component:ContactComponent},
+  {path:"BTT",component:BTTComponent},
   {path:"login", component:LoginComponent},
   {path:"BTT", component:BTTComponent},
   {path:"", redirectTo:"accueil", pathMatch:"full"},
