@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
 <form [formGroup]="f">
     <div class="picture-container">
       <div class="picture">
@@ -14,9 +14,6 @@
        <div class="alert alert-danger" *ngIf="name.errors?.required && name.touched">
         Le nom est obligatoire
         </div> 
-        <!-- <div *ngIf="isValidPattern()" class="alert alert-warning">
-          Le nom doit commencer par une majuscule suivie d'au moins 1 caractère
-          </div> -->
       <div class="col-xs-2" >
         <label>Password</label>
         <input type="password" class="form-control" formControlName="mdp">
@@ -55,4 +52,130 @@
     </div>
   </div>
 </form>
+</div> -->
+
+
+
+<div class="container">
+  <form [formGroup]="f" class="c"><br>
+      <div class="picture-container">
+          <div class="picture">
+              <img src="assets/default-avatar.png" />
+          </div><br>
+      </div>
+      <div class="form-group row">
+          <div class="col-xs-2">
+              <label>Name</label>
+              <input  type="text"  class="form-control" formControlName="nom" >
+              <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+                  Le nom est obligatoire
+              </div>
+
+          </div>
+          <div class="col-xs-2" >
+              <label>Password</label>
+              <input  type="password" class="form-control" formControlName="mdp" >
+              <div *ngIf="password?.invalid && password?.touched " class="alert alert-danger">
+                  Le mot de passe est obligatoire
+              </div>
+          </div>
+      </div><br>
+          <div class="col-xs-2" >
+              <button type="button" class="btn btn-secondary" [disabled]="!connecter()" (click)="onAfficher0()">Connecter</button> &nbsp; 
+              <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
+          </div><br><br>
+  </form>
+        <div class="form-group row">
+        <div class="col-xs-2">
+        
+        <div *ngIf="display0" class="c"> 
+          <h4>Veuillez choisir une opération :</h4>
+          <button (click)="onAfficher()" class="btn btn-secondary">Ajouter</button>&nbsp;
+          <button (click)="onAfficher1()" class="btn btn-secondary">Modifier</button>&nbsp;
+          <button (click)="onAfficher2()" class="btn btn-secondary">Supprimer</button>&nbsp;
+          <button (click)="onAfficher3()"class="btn btn-secondary">Consulter</button><br>
+        </div>
+
+        <div *ngIf="display"><br/>
+          <div class="form-group row">
+            <h5>Ajout d'un hotel :</h5>
+            <form [formGroup]="f1" (ngSubmit)="onAjouter()">  
+              <div class="row g-3">           
+              <div class="col-md-4 col-12">
+                <input placeholder="Id *" type="text" formControlName="id" class="form-control" > 
+              </div>
+              <div class="col-md-4 col-12">
+                <input placeholder="Nom *" type="text" formControlName="name"class="form-control">  
+              </div>  
+              <div class="col-md-4 col-12">
+                <input placeholder="Prix *"  type="number" formControlName="prix"class="form-control">
+              </div>
+              <div class="col-md-4 col-12">
+                <input placeholder="Nombre d'étoiles *"  type="number" formControlName="etoile"class="form-control">
+              </div>   
+              <div class="col-md-4 col-12">
+                <input placeholder="Promotion *"  type="text" formControlName="promo"class="form-control">
+              </div>
+              <div class="col-md-12">
+                <button (click)="onAjouter()" class="btn btn-secondary">Ajouter</button>&nbsp;
+                <button (click)="reset1()" class="btn btn-secondary">Effacer</button>
+              </div>
+            </div>
+            </form> 
+          </div>
+        </div>
+          
+
+        <div *ngIf="display1"><br/>
+          <div class="form-group row">
+            <h5>Modification d'un hotel :</h5>
+            <form [formGroup]="f2" (ngSubmit)="onModifier()"> 
+              <div class="row g-3">
+              <div class="col-md-4 col-12">
+                <input placeholder="Id *" type="text" formControlName="id"class="form-control">
+              </div>
+              <div class="col-md-4 col-12">
+                <input placeholder="Nom *" type="text" formControlName="name"class="form-control">  
+              </div>  
+              <div class="col-md-4 col-12">
+                <input placeholder="Prix *" type="number" formControlName="prix"class="form-control">
+              </div>
+              <div class="col-md-4 col-12">
+                <input placeholder="Nombre d'étoiles *" type="number" formControlName="etoile"class="form-control"> 
+              </div>  
+              <div class="col-md-4 col-12">
+                <input placeholder="Promotion *" type="text" formControlName="boolean"class="form-control">
+              </div>
+              <div class="col-md-12">
+                <button class="btn btn-secondary">Modifier</button>&nbsp;
+                <button (click)="reset2()" class="btn btn-secondary">Effacer</button>
+              </div>
+            </div>
+            </form> 
+          </div>
+        </div>
+          
+          <div *ngIf="display2"><br/>
+            <div class="form-group row">
+              <h5>Suppression d'un hotel :</h5>
+              <form [formGroup]="f3" (ngSubmit)="onSupprimer()">
+                <div class="row g-3">
+                <div class="col-md-4 col-12">
+                  <input placeholder="Id *" type="text" formControlName="id" class="form-control">
+                </div>
+                <div class="col-md-12">
+                  <button class="btn btn-secondary">Supprimer</button>&nbsp;
+                  <button (click)="reset3()" class="btn btn-secondary">Effacer</button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+                   
+          <div *ngIf="display3">
+            <h5>Voici tous les Hotels :</h5>
+            {{lesHotels |json}}
+          </div>
+          <br><br>
+        </div>
 </div>

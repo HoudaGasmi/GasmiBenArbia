@@ -11,16 +11,19 @@ import { Login } from '../login';
 })
 export class LoginComponent implements OnInit {
   login:Login[]=[];
-f=new FormGroup({
-});
-lesHotels:Hotel[]=[];
-  
-  reset(){
-    this.f.reset();
-  }
+
+  lesHotels:Hotel[]=[];
+
+  f=new FormGroup({});
+  f1=new FormGroup({});
+  f2=new FormGroup({});
+  f3=new FormGroup({});
+
   display:boolean = false;
   display1:boolean = false;
   display2:boolean = false;
+  display3:boolean = false; 
+  display0:boolean = false;
  
   onAfficher(){
     this.display= !this.display;
@@ -31,23 +34,69 @@ lesHotels:Hotel[]=[];
   onAfficher2(){
     this.display2= !this.display2;
   }
+  onAfficher3(){
+    this.display3= !this.display3;
+  }
+  onAfficher0(){
+    this.display0= !this.display0;
+  }
 
+  reset(){
+    this.f.reset();
+  }
+  reset1(){
+    this.f1.reset();
+  }
+  reset2(){
+    this.f2.reset();
+  }
+  reset3(){
+    this.f3.reset();
+  }
+  
   constructor(private fb:FormBuilder,private server:HotelService) { }
 
   ngOnInit(): void {
     this.f = this.fb.group({
-      nom:['', Validators.required],
-      mdp: ['', Validators.required],
-      });
-      this.login=this.server.getLogin();
-   }
+      mdp :['', Validators.required],
+      nom : ['', Validators.required],
+    });
 
-   get name(){
+    this.f1 = this.fb.group({
+      id :['', Validators.required],
+      name : ['', Validators.required],
+      prix : ['', Validators.required],
+      etoile : ['', Validators.required],
+      promo : ['', Validators.required],
+    });
+
+    this.f2 = this.fb.group({
+      id :['', Validators.required],
+      name : ['', Validators.required],
+      prix : ['', Validators.required],
+      etoile : ['', Validators.required],
+      promo : ['', Validators.required],
+    });
+
+    this.f3 = this.fb.group({
+      id :['', Validators.required],
+    });
+
+    this.login=this.server.getLogin();
+
+    this.lesHotels=this.server.getHotel();
+  }
+
+  get name(){
     return this.f.controls.nom;
   }
-   get password(){
+  get password(){
    return this.f.controls.mdp;
-   }
+  }
+
+  get op(){
+    return this.f.controls.op.value;
+  }
 
    connecter(){
      for (let i = 0; i < this.login.length; i++) {
@@ -58,5 +107,17 @@ lesHotels:Hotel[]=[];
      return false;
     
    }
+   
+   onAjouter(){
+     
+   }
 
-  }
+   onSupprimer(){
+
+   }
+
+   onModifier(){
+     
+   }
+
+}

@@ -1,0 +1,49 @@
+{
+    "lesHotels":[
+        {
+            "id":"a",
+            "nom":"Royal Kenz Thalasso & Spa",
+            "prix":102,
+            "image":{
+                "image1":"/assets/thalasso.jpg",
+                "image2":"/assets/sousse.jpg",
+                "image3":"/assets/kenz.jpg",
+                "image4":"/assets/thalasso1.jpg",
+                "image5":"/assets/thalasso2.jpg",
+            },
+            "region":"Sousse",
+            "nbEtoiles":"/assets/5etoile.png",
+            "promotion":true
+        },
+        {
+            "id":"b",
+            "nom":"Hotel Mövenpick",
+            "prix":225,
+            "image":{
+                "image1":"/assets/mvmpik.jpg",
+                "image2":"/assets/mvp.jpg",
+                "image3":"/assets/mvp1.jpg",
+                "image4":"/assets/mvp2.jpg",
+                "image5":"/assets/mvp3.jpg",
+            },
+            "region":"Sousse",
+            "nbEtoiles":"/assets/5etoile.png",
+            "promotion":false
+        },
+        {
+            "id":"a",
+            "nom":"",
+            "prix":,
+            "image":{
+                "image1":"",
+                "image2":"",
+                "image3":"",
+                "image4":"",
+                "image5":"",
+            },
+            "region":"",
+            "nbEtoiles":"",
+            "promotion":""
+        },
+    ]
+}
