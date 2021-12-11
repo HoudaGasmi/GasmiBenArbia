@@ -14,6 +14,11 @@ import { PictureComponent } from './picture/picture.component';
 import { ImageComponent } from './image/image.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BTTComponent } from './btt/btt.component';
+import { AjouterComponent } from './ajouter/ajouter.component';
+import { ModifierComponent } from './modifier/modifier.component';
+import { SupprimerComponent } from './supprimer/supprimer.component';
+import { ConsulterComponent } from './consulter/consulter.component';
+import { PersoPipePipe } from './perso-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,13 @@ import { BTTComponent } from './btt/btt.component';
     ListHotelComponent,
     PictureComponent,
     ImageComponent,
-    BTTComponent
+    BTTComponent,
+    AjouterComponent,
+    ModifierComponent,
+    SupprimerComponent,
+    ConsulterComponent,
+    PersoPipePipe,
+    
   ],
   imports: [
     BrowserModule,

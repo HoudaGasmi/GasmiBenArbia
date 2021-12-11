@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Hotel } from '../hotel';
+import { PersoPipePipe } from '../perso-pipe.pipe';
 
 @Component({
   selector: 'app-list-hotel',

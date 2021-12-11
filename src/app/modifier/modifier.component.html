@@ -1,0 +1,39 @@
+<div class="container">
+    <h4>Modification d'un hotel</h4>
+    <form>
+        <label>ID :</label>
+        <input type="text" class="form-control" >
+            <label>Nom:</label>
+            <input type="text" class="form-control">
+            <label>Prix:</label>
+            <input type="number" class="form-control" ><br>
+            <label>Images:</label><br>
+            <label>Image 1:</label>
+            <input type="text" class="form-control">
+            <label>Image 2:</label>
+            <input type="text" class="form-control">
+            <label>Image 3:</label>
+            <input type="text" class="form-control">
+            <label>Image 4:</label>
+            <input type="text" class="form-control">
+            <label>Image 5:</label>
+            <input type="text" class="form-control"><br>
+            <label>Nombre d'etoiles :</label>&nbsp;
+            <select>
+                <option></option>
+                <option value="/assets/4etoile.png">4Etoiles</option>
+                <option value="/assets/5etoile.png">5Etoiles</option>
+            </select><br><br>
+            <div>
+                <label>En promotion ? </label>&nbsp;
+                <input type="radio" name="promotion" > Oui&nbsp;
+                <input type="radio" name="promotion" > Non
+            </div>
+        <br>
+        <div>
+            <input type="button" value=" Modifier " class="btn btn-warning">&nbsp;
+            <a class="btn btn-warning" routerLink="/login" routerLinkActive="actif">Retour</a>&nbsp;
+            <input type="button" value=" Effacer" class="btn btn-warning" (click)="reset()"> <br><br>
+        </div>
+    </form>
+</div>

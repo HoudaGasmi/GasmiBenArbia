@@ -1,5 +1,5 @@
 <div class="container">
-  <form [formGroup]="f"><br>
+  <form [formGroup]="f" class="c"><br>
       <div class="picture-container">
           <div class="picture">
               <img src="assets/default-avatar.png" />
@@ -20,26 +20,21 @@
               <div *ngIf="password?.invalid && password?.touched " class="alert alert-danger">
                   Le mot de passe est obligatoire
               </div>
-
-          </div></div><br>
+          </div>
+      </div><br>
           <div class="col-xs-2" >
-              <button type="button" class="btn btn-secondary" [disabled]="!connecter()">Connecter</button> &nbsp; 
-              <button type="button" class="btn btn-secondary" (click)="reset()">Effacer</button><br><br>
-          </div>
-        </form>
-
-          <div *ngIf="connecter()"> 
-            <p>Veuillez choisir l'opération :</p>
-            <ul>
-              <li (click)="ajouter()">Ajouter</li>
-              <li><a>Modifier</a></li>
-              <li><a>Supprimer</a></li>
-            </ul>
-          </div>
-          <div *ngIf="op=='1'"> 
-            <form>
-              <p>fghjklmm</p>
-            </form>
-          </div>
-
+              <button type="button" class="btn btn-secondary" [disabled]="!connecter()" (click)="onAfficher0()">Connecter</button> &nbsp; 
+              <button type="button" class="btn btn-secondary" (click)="Reset()">Effacer</button><br><br>
+          </div><br><br>
+  </form>
+        <div class="form-group row">
+        <div class="col-xs-2">
+        
+        <div *ngIf="display0" class="c"> 
+          <h3>Veuillez choisir une opération :</h3>
+          <a class="btn btn-danger" routerLink="/ajouter" routerLinkActive="actif">Ajouter Hotel</a>&nbsp;
+          <a class="btn btn-danger" routerLink="/supprimer" routerLinkActive="actif">Supprimer Hotel</a>&nbsp;
+          <a class="btn btn-danger" routerLink="/modifier" routerLinkActive="actif">Modifier Hotel</a>&nbsp;
+          <a class="btn btn-danger" routerLink="/consulter" routerLinkActive="actif">Consulter Les Hotels</a>
+        </div>
 </div>
