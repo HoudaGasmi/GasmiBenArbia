@@ -7,12 +7,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
 f=new FormGroup({ message : new FormControl(''),
   civ : new FormControl('',[Validators.required]),
-  prenom : new FormControl('',[Validators.required]),
-  nom : new FormControl('',[Validators.required]),
-  tel : new FormControl('',[Validators.required]),
   mail : new FormControl('',[Validators.required]),
   addresse : new FormControl('',[Validators.required])
 } );

@@ -21,6 +21,7 @@ const routes: Routes = [
   {path:"consulter",component:ConsulterComponent},
   {path:"BTT",component:BTTComponent},
   {path:"login", component:LoginComponent},
+  {path:"BTT", component:BTTComponent},
   {path:"", redirectTo:"accueil", pathMatch:"full"},
   {path:"**", component:ErrorComponent}
 ];

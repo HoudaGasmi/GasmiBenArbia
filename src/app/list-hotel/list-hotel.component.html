@@ -1,12 +1,12 @@
 <h5><span class="badge bg-dark">{{hotel.nom |uppercase}}</span></h5>
-{{hotel.region }}    <img [src]="hotel.nbEtoiles">
+{{hotel.regigon }}    <img [src]="hotel.nbEtoiles">
 <div class="d-flex justify-content-between">
     <div *ngFor="let p of hotel.image">
         <app-picture [pic]="p"></app-picture>
     </div>  
     <div>
     Prix: {{hotel.prix | number:'2.3'}} DT<br/>
-    <span *ngIf="hotel.promotion"><button class="btn btn-success">En Promotion</button></span>
+    <span *ngIf="hotel.promotion"><img class="c" src="/assets/promo.jpg"></span>
     <br/>
     <button (click)="onAfficher()" class="btn btn-link">Détails</button></div></div>
     <div *ngIf="display">
@@ -22,7 +22,7 @@
         <tr>
         <td>Club de remise en forme  </td> <td> Massage</td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <td>Piscine</td></tr>
         <tr>
-        <td> <i class="fa fa-phone"></i>Téléphone avec ligne directe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> <td>Plage</td></tr>
+        <td>Téléphone avec ligne directe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> <td>Plage</td></tr>
         
     </table>
     <br/>
