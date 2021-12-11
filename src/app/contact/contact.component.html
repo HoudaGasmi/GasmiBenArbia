@@ -3,8 +3,8 @@
     <form  [formGroup]="f" (ngSubmit)="method()">
         <div class="row g-3">
             <div class="col-md-4 col-12">
-                <select class="form-select" value="Civilité*" formControlName="civ">
-                    <option>Civilité*</option>
+                <select value="Civilité*" formControlName="civ" class="form-select">
+                    <option [selected]="true">Civilité*</option>
                     <option>Mr</option>
                     <option>Mme</option>
                 </select>
@@ -45,7 +45,7 @@
             </div>
         </div>
     </form>
-</div> <br><br><br><br><br><br><br><br>
+</div> <br><br><br><br><br><br><br><br><br>
 
 <div class="c">
     <img src="/assets/local.png"  class="c1"> Tunisie, Sokra, Rue3200
