@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Hotel } from '../hotel';
+import { HotelService } from '../hotel.service';
 
 @Component({
   selector: 'app-modifier',
@@ -8,6 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class ModifierComponent implements OnInit {
 
+  lesHotels:Hotel[]=[];
   f:FormGroup=this.fb.group({
     id:  ['',Validators.required],
     nom : ['',Validators.required],
@@ -22,7 +25,7 @@ export class ModifierComponent implements OnInit {
     promo : ['true',Validators.required]
   });
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder, private hotelsevice:HotelService) { }
 
   ngOnInit(): void {
   }
@@ -66,7 +69,14 @@ export class ModifierComponent implements OnInit {
   }
 
   onModifier(){
-
+    this.hotelsevice.updateHotel(this.f.controls['id'].value,this.f.value)
+    .subscribe(
+      hotel=>{
+      let position = this.lesHotels.findIndex(this.f.value => this.f.controls['id'].value == hotel.id);
+      this.lesHotels[potision]= hotel ;
+      })
   }
 
 }
+
+

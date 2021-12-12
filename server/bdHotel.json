@@ -2,18 +2,16 @@
   "lesHotels": [
     {
       "id": "a",
-      "nom": "Royal Kenz Thalasso & Spa",
-      "prix": 102,
-      "image": {
-        "image1": "/assets/thalasso.jpg",
-        "image2": "/assets/sousse.jpg",
-        "image3": "/assets/kenz.jpg",
-        "image4": "/assets/thalasso1.jpg",
-        "image5": "/assets/thalasso2.jpg"
-      },
-      "region": "Sousse",
-      "nbEtoiles": "/assets/5etoile.png",
-      "promotion": true
+      "nom": "abc",
+      "prix": 0,
+      "region": "",
+      "image1": "",
+      "image2": "",
+      "image3": "",
+      "image4": "",
+      "image5": "",
+      "nbEtoile": "/assets/5etoile.png",
+      "promo": "true"
     },
     {
       "id": "b",
@@ -152,15 +150,15 @@
     },
     {
       "id": "z",
-      "nom": "azerty",
-      "prix": 150,
-      "region": "Sousse",
-      "image1": "sdfghjklm",
-      "image2": "sdfghjkl",
-      "image3": "sdfghjkl",
-      "image4": "sdfghjkl",
-      "image5": "sdfghjk",
-      "nbEtoiles": "/assets/5etoile.png",
+      "nom": "abc",
+      "prix": 0,
+      "region": "",
+      "image1": "",
+      "image2": "",
+      "image3": "",
+      "image4": "",
+      "image5": "",
+      "nbEtoile": "/assets/5etoile.png",
       "promo": "true"
     },
     {
@@ -173,6 +171,19 @@
       "image3": "k",
       "image4": "fgh",
       "image5": "ghj",
+      "nbEtoiles": "/assets/5etoile.png",
+      "promo": "true"
+    },
+    {
+      "id": "dfgh",
+      "nom": "dfgvbn",
+      "prix": 44,
+      "region": "uytrsq",
+      "image1": "qsdfghjkl",
+      "image2": "dfghjk",
+      "image3": "sdfghj",
+      "image4": "fbdfghj",
+      "image5": "sdfghjk",
       "nbEtoiles": "/assets/5etoile.png",
       "promo": "true"
     }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Subscriber } from 'rxjs';
+import { HotelService } from '../hotel.service';
 
 @Component({
   selector: 'app-supprimer',
@@ -12,7 +14,7 @@ export class SupprimerComponent implements OnInit {
     id:  ['',Validators.required]
   });
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder, private hotelservice:HotelService) { }
 
   ngOnInit(): void {
   }
@@ -26,7 +28,8 @@ export class SupprimerComponent implements OnInit {
   }
 
   onSupprimer(){
-
+    this.hotelservice.deleteHotel(this.f.controls.id)
+    .subscribe()
   }
   
 
