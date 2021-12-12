@@ -1,19 +1,6 @@
 {
   "lesHotels": [
     {
-      "id": "a",
-      "nom": "abc",
-      "prix": 0,
-      "region": "",
-      "image1": "",
-      "image2": "",
-      "image3": "",
-      "image4": "",
-      "image5": "",
-      "nbEtoile": "/assets/5etoile.png",
-      "promo": "true"
-    },
-    {
       "id": "b",
       "nom": "Hotel Mövenpick",
       "prix": 225,
@@ -57,36 +44,6 @@
       "region": "Hammamet",
       "nbEtoiles": "assets/4etoile.png",
       "promotion": false
-    },
-    {
-      "id": "e",
-      "nom": "Hotel La Cigale",
-      "prix": 140,
-      "image": {
-        "image1": "/assets/cigal1.jpg",
-        "image2": "/assets/cigal4.jpg",
-        "image3": "/assets/cigal2.jpg",
-        "image4": "/assets/cigal3.jpg",
-        "image5": "/assets/cigal.jpg"
-      },
-      "region": "Tabarka",
-      "nbEtoiles": "/assets/5etoile.png",
-      "promotion": false
-    },
-    {
-      "id": "f",
-      "nom": "Hotel Thabraca",
-      "prix": 99,
-      "image": {
-        "image1": "/assets/tabraka1.jpg",
-        "image2": "/assets/tabraka2.jpg",
-        "image3": "/assets/tabraka3.jpg",
-        "image4": "/assets/tabraka4.jpg",
-        "image5": "/assets/tabraka.jpg"
-      },
-      "region": "Tabarka",
-      "nbEtoiles": "/assets/4etoile.png",
-      "promotion": true
     },
     {
       "id": "g",
@@ -147,45 +104,6 @@
       "region": "Mahdia",
       "nbEtoiles": "/assets/4etoile.png",
       "promotion": false
-    },
-    {
-      "id": "z",
-      "nom": "abc",
-      "prix": 0,
-      "region": "",
-      "image1": "",
-      "image2": "",
-      "image3": "",
-      "image4": "",
-      "image5": "",
-      "nbEtoile": "/assets/5etoile.png",
-      "promo": "true"
-    },
-    {
-      "id": "r",
-      "nom": "fghj",
-      "prix": 11,
-      "region": "fghkjk",
-      "image1": "tgy",
-      "image2": "ghj",
-      "image3": "k",
-      "image4": "fgh",
-      "image5": "ghj",
-      "nbEtoiles": "/assets/5etoile.png",
-      "promo": "true"
-    },
-    {
-      "id": "dfgh",
-      "nom": "dfgvbn",
-      "prix": 44,
-      "region": "uytrsq",
-      "image1": "qsdfghjkl",
-      "image2": "dfghjk",
-      "image3": "sdfghj",
-      "image4": "fbdfghj",
-      "image5": "sdfghjk",
-      "nbEtoiles": "/assets/5etoile.png",
-      "promo": "true"
     }
   ]
 }

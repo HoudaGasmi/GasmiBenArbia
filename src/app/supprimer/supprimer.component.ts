@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Subscriber } from 'rxjs';
+import { Observable, Subscriber } from 'rxjs';
 import { HotelService } from '../hotel.service';
 
 @Component({
@@ -27,9 +27,8 @@ export class SupprimerComponent implements OnInit {
 
   }
 
-  onSupprimer(){
-    this.hotelservice.deleteHotel(this.f.controls.id)
-    .subscribe()
+ onSupprimer(){
+    this.hotelservice.deleteHotel(this.f.controls['id'].value).subscribe();
   }
   
 

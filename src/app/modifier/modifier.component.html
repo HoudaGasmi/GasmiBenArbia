@@ -3,6 +3,9 @@
     <form [formGroup]="f" (ngSubmit)="onModifier(); f.reset()">
         <label>ID :</label>
         <input type="text" class="form-control" formControlName="id">
+        <div *ngIf="id.invalid && id.touched" class="alert alert-danger">
+            L'ID est obligatoire
+        </div>
             <label>Nom:</label>
             <input type="text" class="form-control" formControlName="nom">
             <label>Prix:</label>

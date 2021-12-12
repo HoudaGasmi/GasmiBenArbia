@@ -14,7 +14,9 @@ export class ConsulterComponent implements OnInit {
   constructor(private server:HotelService) { }
 
   ngOnInit(): void {
-    // this.lesHotels=this.server.getHotel();
-  }
+    this.server.getHotels()
+    .subscribe(
+      data => this.lesHotels = data
+    )  }
 
 }

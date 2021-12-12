@@ -13,14 +13,14 @@ export class ModifierComponent implements OnInit {
   lesHotels:Hotel[]=[];
   f:FormGroup=this.fb.group({
     id:  ['',Validators.required],
-    nom : ['',Validators.required],
+    nom : ['azerty',Validators.required],
     prix : [0,Validators.required],
-    region : ['',Validators.required],
-    image1 : ['',Validators.required],
-    image2 : ['',Validators.required],
-    image3 : ['',Validators.required],
-    image4 : ['',Validators.required],
-    image5 : ['',Validators.required],
+    region : ['Tunis',Validators.required],
+    image1 : ['/assets/im.png',Validators.required],
+    image2 : ['/assets/im.png',Validators.required],
+    image3 : ['/assets/im.png',Validators.required],
+    image4 : ['/assets/im.png',Validators.required],
+    image5 : ['/assets/im.png',Validators.required],
     nbEtoile : ['/assets/5etoile.png',Validators.required],
     promo : ['true',Validators.required]
   });
@@ -72,8 +72,8 @@ export class ModifierComponent implements OnInit {
     this.hotelsevice.updateHotel(this.f.controls['id'].value,this.f.value)
     .subscribe(
       hotel=>{
-      let position = this.lesHotels.findIndex(this.f.value => this.f.controls['id'].value == hotel.id);
-      this.lesHotels[potision]= hotel ;
+      let p = this.lesHotels.findIndex(this.f.value,this.f.controls['id'].value == hotel.id);
+      this.lesHotels[p]= hotel ;
       })
   }
 

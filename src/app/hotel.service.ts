@@ -63,7 +63,7 @@ export class HotelService {
   }
 
   deleteHotel(id:string){
-    this.http.delete(URL+ "/"+id);
+    return this.http.delete(URL+ "/"+id);
   }
 
   updateHotel(id:string, hotel:Hotel):Observable<Hotel>{
