@@ -3,6 +3,9 @@
     <form [formGroup]="f" (ngSubmit)="onModifier(); f.reset()">
         <label>ID :</label>
         <input type="text" class="form-control" formControlName="id">
+        <div *ngIf="id.invalid && id.touched" class="alert alert-danger">
+            L'ID est obligatoire
+        </div>
             <label>Nom:</label>
             <input type="text" class="form-control" formControlName="nom">
             <label>Prix:</label>
@@ -32,7 +35,7 @@
             </div>
         <br>
         <div>
-            <input type="button" value=" Modifier " class="btn btn-warning" (click)="onModifier">&nbsp;
+            <input type="button" value=" Modifier " class="btn btn-warning" (click)="onModifier()">&nbsp;
             <a class="btn btn-warning" routerLink="/login" routerLinkActive="actif">Retour</a>&nbsp;
             <input type="button" value=" Effacer" class="btn btn-warning" (click)="reset()"> <br><br>
         </div>

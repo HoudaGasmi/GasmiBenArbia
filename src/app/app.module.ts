@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +16,7 @@ import { ModifierComponent } from './modifier/modifier.component';
 import { SupprimerComponent } from './supprimer/supprimer.component';
 import { ConsulterComponent } from './consulter/consulter.component';
 import { PersoPipePipe } from './perso-pipe.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
