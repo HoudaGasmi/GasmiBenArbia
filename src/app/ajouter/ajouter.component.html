@@ -1,41 +1,74 @@
 <div class="container">
     <h2> Ajout d'un hotel</h2><br>
-<form [formGroup]="f">
+<form [formGroup]="f" (ngSubmit)="onAjouter(); f.reset()">
     <label>ID:</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" formControlName="id">
+    <div *ngIf="id.invalid && id.touched" class="alert alert-danger">
+        L'identifiant est obligatoire
+    </div>
     <label>Nom:</label>
-    <input type="text" class="form-control">
+    <input type="text" class="form-control" formControlName="nom">
+    <div *ngIf="nom.invalid && nom.touched" class="alert alert-danger">
+        Le nom est obligatoire
+    </div>
     <label>Prix:</label>
-    <input type="number" class="form-control" ><br>
+    <input type="number" class="form-control" formControlName="prix"><br>
+    <div *ngIf="prix.invalid && prix.touched" class="alert alert-danger">
+        Le prix est obligatoire
+    </div>
+    <label>Region:</label>
+    <input type="text" class="form-control" formControlName="region"><br>
+    <div *ngIf="region.invalid && region.touched" class="alert alert-danger">
+        La region est obligatoire
+    </div>
     <label>Images:</label>
     <div>
         <label>Image 1:</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="image1">
+        <div *ngIf="image1.invalid && image1.touched" class="alert alert-danger">
+            Les images sont obligatoires
+        </div>
         <label>Image 2:</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="image2">
+        <div *ngIf="image2.invalid && image2.touched" class="alert alert-danger">
+            Les images sont obligatoires
+        </div>
         <label>Image 3:</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="image3">
+        <div *ngIf="image3.invalid && image3.touched" class="alert alert-danger">
+            Les images sont obligatoires
+        </div>
         <label>Image 4:</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" formControlName="image4">
+        <div *ngIf="image4.invalid && image4.touched" class="alert alert-danger">
+            Les images sont obligatoires
+        </div>
         <label>Image 5:</label>
-        <input type="text" class="form-control"><br>
+        <input type="text" class="form-control" formControlName="image5"><br>
+        <div *ngIf="image5.invalid && image5.touched" class="alert alert-danger">
+            Les images sont obligatoires
+        </div>
     </div>
 
     <label>Nombre d'etoiles :</label>&nbsp;
-    <select>
-      <option></option>
+    <select formControlName="nbEtoiles">
       <option value="/assets/4etoile.png">4Etoiles</option>
       <option value="/assets/5etoile.png">5Etoiles</option>
-    </select><br><br>
+    </select>
+    <br><br>
     <div>
         <label>En promotion ? </label>&nbsp;
-        <input type="radio" name="promotion" > Oui&nbsp;
-        <input type="radio" name="promotion" > Non
+        <label>
+        <input type="radio" value="true" formControlName="promo"> Oui&nbsp;
+        </label>
+        <label>
+        <input type="radio" value="false" formControlName="promo"> Non
+        </label>
     </div><br>
     <div>
-        <input type="button" value=" Ajouter" class="btn btn-warning">&nbsp;
+        <input type="button" (click)="onAjouter()" value="Ajouter" class="btn btn-warning">&nbsp;
         <a class="btn btn-warning" routerLink="/login" routerLinkActive="actif">Retour</a>&nbsp;
-        <input type="button" value=" Effacer" class="btn btn-warning" (click)="reset()">&nbsp; <br><br>
+        <input type="button" value="Effacer" class="btn btn-warning" (click)="reset()">&nbsp; <br><br>
     </div>
 </form>
 

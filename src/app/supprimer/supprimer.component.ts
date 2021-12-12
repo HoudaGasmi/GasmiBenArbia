@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-supprimer',
@@ -8,13 +8,26 @@ import { FormGroup } from '@angular/forms';
 })
 export class SupprimerComponent implements OnInit {
 
-  f=new FormGroup({});
+  f:FormGroup=this.fb.group({
+    id:  ['',Validators.required]
+  });
 
-  constructor() { }
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
   }
 
+  get id(){
+    return this.f.controls.id;
+  }
+
+  reset(){
+
+  }
+
+  onSupprimer(){
+
+  }
   
 
 }

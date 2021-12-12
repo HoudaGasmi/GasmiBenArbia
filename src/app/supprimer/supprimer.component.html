@@ -1,9 +1,12 @@
 <div class="container">
     <h2>Suppression d'un hotel :</h2><br>
-      <form [formGroup]="f">
+      <form [formGroup]="f" (ngSubmit)="onSupprimer(); f.reset()">
           <label>ID :</label>
-            <input type="text" formControlName="id" class="form-control"><br>
-            <button class="btn btn-warning">Supprimer</button>&nbsp;
+            <input type="text" formControlName="id" class="form-control" (click)="onSupprimer()"><br>
+            <div *ngIf="id.invalid && id.touched" class="alert alert-danger">
+              L'identifiant est obligatoire
+            </div>
+            <button class="btn btn-warning" (click)="reset()">Supprimer</button>&nbsp;
             <a class="btn btn-warning" routerLink="/login" routerLinkActive="actif">Retour</a>&nbsp;
       </form>
 </div>
