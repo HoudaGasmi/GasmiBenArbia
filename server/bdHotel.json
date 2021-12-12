@@ -1,11 +1,26 @@
 {
   "lesHotels": [
     {
+      "id": "a",
+      "nom": "Royal Kenz Thalasso & Spa",
+      "prix": 102,
+      "picture":"/assets/thalasso.jpg",
+      "image": {
+        "image2": "/assets/sousse.jpg",
+        "image3": "/assets/kenz.jpg",
+        "image4": "/assets/thalasso1.jpg",
+        "image5": "/assets/thalasso2.jpg"
+      },
+      "region": "Sousse",
+      "nbEtoiles": "/assets/5etoile.png",
+      "promotion": true
+    },
+    {
       "id": "b",
       "nom": "Hotel Mövenpick",
       "prix": 225,
+      "picture":"/assets/mvmpik.jpg",
       "image": {
-        "image1": "/assets/mvmpik.jpg",
         "image2": "/assets/mvp.jpg",
         "image3": "/assets/mvp1.jpg",
         "image4": "/assets/mvp2.jpg",
@@ -19,6 +34,7 @@
       "id": "c",
       "nom": "Steigenberger Marhaba Thalasso",
       "prix": 150,
+      "picture":"/assets/hammamet3.jpg",
       "image": {
         "image1": "/assets/hammamet3.jpg",
         "image2": "/assets/hammamet1.jpg",
@@ -34,8 +50,8 @@
       "id": "d",
       "nom": "Blue Marine Hotel & Thalasso",
       "prix": 92,
+      "picture":"/assets/Blue.jpg",
       "image": {
-        "image1": "/assets/Blue.jpg",
         "image2": "/assets/Blue1.jpg",
         "image3": "/assets/Blue2.jpg",
         "image4": "/assets/Blue3.jpg",
@@ -49,8 +65,8 @@
       "id": "g",
       "nom": "Iberostar Selection Kuriat Palace",
       "prix": 174,
+      "picture":"/assets/monastir5.jpg",
       "image": {
-        "image1": "/assets/monastir5.jpg",
         "image2": "/assets/monastir6.jpg",
         "image3": "/assets/monastir7.jpg",
         "image4": "/assets/monastir8.jpg",
@@ -64,8 +80,8 @@
       "id": "h",
       "nom": "Royal Thalassa Monastir",
       "prix": 153,
+      "picture":"/assets/monastir.jpg",
       "image": {
-        "image1": "/assets/monastir.jpg",
         "image2": "/assets/monastir1.jpg",
         "image3": "/assets/monastir2.jpg",
         "image4": "/assets/monastir3.jpg",
@@ -79,8 +95,8 @@
       "id": "i",
       "nom": "Iberostar Royal El Mansour",
       "prix": 156,
+      "picture":"/assets/mahdia.jpg",
       "image": {
-        "image1": "/assets/mahdia.jpg",
         "image2": "/assets/mahdia1.jpg",
         "image3": "/assets/mahdia2.jpg",
         "image4": "/assets/mahdia3.jpg",
@@ -94,8 +110,8 @@
       "id": "j",
       "nom": "Mahdia Palace",
       "prix": 138,
+      "picture":"/assets/mahdia5.jpg",
       "image": {
-        "image1": "/assets/mahdia5.jpg",
         "image2": "/assets/mahdia6.jpg",
         "image3": "/assets/mahdia7.jpg",
         "image4": "/assets/mahdia8.jpg",
