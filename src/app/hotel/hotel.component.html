@@ -1,6 +1,6 @@
 <div class="container">
     <form [formGroup]="f">
-      <input class="r" type="text" formControlName="recherche" value="" size="80" placeholder="Rechercher" ><div class="fa fa-search" ></div>
+      <input class="r" type="text" formControlName="recherche" value="" size="80" placeholder="Rechercher" (click)="recherche()"><div class="fa fa-search" ></div>
     </form>
     
     <h1>HOTELS</h1>
