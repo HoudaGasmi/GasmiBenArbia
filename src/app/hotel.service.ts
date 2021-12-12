@@ -1,9 +1,12 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FormGroup, NgForm } from '@angular/forms';
+import { Observable } from 'rxjs';
 import { Hotel } from './hotel';
 import { Login } from './login';
 import { Picture } from './picture';
 
+const URL = "http://localhost:3000/lesHotels";
 @Injectable({
   providedIn: 'root'
 })
@@ -44,7 +47,11 @@ export class HotelService {
      new Login("Oumaima Ben Arbia","123456")
    ]
    id: string="";
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getHotels():Observable<Hotel[]>{
+    return this.http.get<Hotel[]>(URL);
+    }
 
   getHotel(){
     return this.lesHotels;
