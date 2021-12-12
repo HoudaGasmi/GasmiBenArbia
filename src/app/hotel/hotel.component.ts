@@ -11,9 +11,9 @@ import { Picture } from '../picture';
   styleUrls: ['./hotel.component.css']
 })
 export class HotelComponent implements OnInit {
-p: Picture = new Picture();
- i: Picture = new Picture();
- lesHotels:Hotel[]=[];
+  p: Picture = new Picture();
+  i: Picture = new Picture();
+  lesHotels:Hotel[]=[];
 //  chaine!:string;
 //  b:boolean=false;
 //  hotel:Hotel[]=[];
@@ -43,7 +43,10 @@ p: Picture = new Picture();
     .subscribe(
       data => this.lesHotels = data
     )
-    // this.lesHotels=this.hotelservice.getHotel();
+  }
+
+  recherche(){
+
   }
 
 

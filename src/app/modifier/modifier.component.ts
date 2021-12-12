@@ -65,7 +65,8 @@ export class ModifierComponent implements OnInit {
   }
 
   reset(){
-
+    this.f.reset({nom : 'azerty',prix : 0,region :'Tunis',image1 :'/assets/im.png',image2 :'/assets/im.png',image3 :'/assets/im.png',image4 :'/assets/im.png',image5 :'/assets/im.png',nbEtoile : '/assets/5etoile.png',
+    promo : 'true'});
   }
 
   onModifier(){

@@ -1,6 +1,6 @@
 <div class="container">
     <form [formGroup]="f">
-      <input class="r" type="text" formControlName="recherche" value="" size="80" placeholder="Rechercher" ><div class="fa fa-search" ></div>
+      <input class="r" type="text" formControlName="recherche" value="" size="80" placeholder="Rechercher" (click)="recherche()"><div class="fa fa-search" ></div>
     </form>
     
     <h1>HOTELS</h1>
@@ -11,7 +11,7 @@
         <img [src]="l.image">
       </div>  -->
       Prix: {{l.prix | number:'2.3'}} DT<br/>
-      <span *ngIf="l.promo"> 
+      <span *ngIf="l.promo==true"> 
         <img class="c" src="/assets/promo.jpg"/> 
       </span> <br>
       <button (click)="onAfficher()" class="btn btn-link">Détails</button>
@@ -60,6 +60,6 @@
     <br><br>
     </div>
 </div>
-        <!-- {{lesHotels | json}} -->
+        {{lesHotels | json}}
 
     
