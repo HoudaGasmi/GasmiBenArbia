@@ -1,37 +1,38 @@
 <div class="container">
     <h4>Modification d'un hotel</h4>
-    <form>
+    <form [formGroup]="f" (ngSubmit)="onModifier(); f.reset()">
         <label>ID :</label>
-        <input type="text" class="form-control" >
+        <input type="text" class="form-control" formControlName="id">
             <label>Nom:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="nom">
             <label>Prix:</label>
-            <input type="number" class="form-control" ><br>
+            <input type="number" class="form-control" formControlName="prix" ><br>
+            <label>Region:</label>
+            <input type="text" class="form-control" formControlName="region" ><br>
             <label>Images:</label><br>
             <label>Image 1:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="image1">
             <label>Image 2:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="image2">
             <label>Image 3:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="image3">
             <label>Image 4:</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="image4">
             <label>Image 5:</label>
-            <input type="text" class="form-control"><br>
+            <input type="text" class="form-control" formControlName="image5"><br>
             <label>Nombre d'etoiles :</label>&nbsp;
-            <select>
-                <option></option>
+            <select  formControlName="nbEtoile">
                 <option value="/assets/4etoile.png">4Etoiles</option>
                 <option value="/assets/5etoile.png">5Etoiles</option>
             </select><br><br>
             <div>
                 <label>En promotion ? </label>&nbsp;
-                <input type="radio" name="promotion" > Oui&nbsp;
-                <input type="radio" name="promotion" > Non
+                <input type="radio" formControlName="promo"> Oui&nbsp;
+                <input type="radio" formControlName="promo"> Non
             </div>
         <br>
         <div>
-            <input type="button" value=" Modifier " class="btn btn-warning">&nbsp;
+            <input type="button" value=" Modifier " class="btn btn-warning" (click)="onModifier">&nbsp;
             <a class="btn btn-warning" routerLink="/login" routerLinkActive="actif">Retour</a>&nbsp;
             <input type="button" value=" Effacer" class="btn btn-warning" (click)="reset()"> <br><br>
         </div>

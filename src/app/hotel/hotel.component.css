@@ -8,3 +8,12 @@ img{
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
+img{
+    width: 70px;
+    height: 20px;
+}
+.c{
+    width: 80px;
+    height: 70px;
+}

@@ -10,9 +10,6 @@ import { MenuComponent } from './menu/menu.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-import { ListHotelComponent } from './list-hotel/list-hotel.component';
-import { PictureComponent } from './picture/picture.component';
-import { ImageComponent } from './image/image.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BTTComponent } from './btt/btt.component';
 import { AjouterComponent } from './ajouter/ajouter.component';
@@ -30,9 +27,6 @@ import { PersoPipePipe } from './perso-pipe.pipe';
     AccueilComponent,
     ContactComponent,
     LoginComponent,
-    ListHotelComponent,
-    PictureComponent,
-    ImageComponent,
     BTTComponent,
     AjouterComponent,
     ModifierComponent,
@@ -46,7 +40,6 @@ import { PersoPipePipe } from './perso-pipe.pipe';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
