@@ -13,7 +13,7 @@
       },
       "region": "Sousse",
       "nbEtoiles": "/assets/5etoile.png",
-      "promotion": true
+      "promo": true
     },
     {
       "id": "b",
@@ -28,7 +28,7 @@
       },
       "region": "Sousse",
       "nbEtoiles": "/assets/5etoile.png",
-      "promotion": false
+      "promo": false
     },
     {
       "id": "c",
@@ -44,7 +44,7 @@
       },
       "region": "Hammamet",
       "nbEtoiles": "/assets/4etoile.png",
-      "promotion": true
+      "promo": true
     },
     {
       "id": "d",
@@ -59,7 +59,7 @@
       },
       "region": "Hammamet",
       "nbEtoiles": "assets/4etoile.png",
-      "promotion": false
+      "promo": false
     },
     {
       "id": "g",
@@ -74,7 +74,7 @@
       },
       "region": "Monastir",
       "nbEtoiles": "/assets/5etoile.png",
-      "promotion": true
+      "promo": true
     },
     {
       "id": "h",
@@ -89,7 +89,7 @@
       },
       "region": "Monastir",
       "nbEtoiles": "/assets/4etoile.png",
-      "promotion": true
+      "promo": true
     },
     {
       "id": "i",
@@ -104,7 +104,7 @@
       },
       "region": "Mahdia",
       "nbEtoiles": "/assets/5etoile.png",
-      "promotion": true
+      "promo": true
     },
     {
       "id": "j",

@@ -10,6 +10,6 @@ export class Hotel {
     public image?: Picture[],
     public region?: string,
     public nbEtoiles?: string,
-    public promotion?: boolean
+    public promo?: boolean
     ){}
 }

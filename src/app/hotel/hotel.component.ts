@@ -14,6 +14,8 @@ export class HotelComponent implements OnInit {
   p: Picture = new Picture();
   i: Picture = new Picture();
   lesHotels:Hotel[]=[];
+  hotel:Hotel[]=[];
+
 //  chaine!:string;
 //  b:boolean=false;
 //  hotel:Hotel[]=[];
@@ -36,6 +38,14 @@ export class HotelComponent implements OnInit {
   //       console.log(true) ;}
   //   } 
   // }
+  chercher():boolean{
+    for (let i =0;i<this.lesHotels.length;i++) {
+      if(this.lesHotels[i].region==this.f.controls.recherche.value || this.lesHotels[i].nom==this.f.controls.recherche.value)
+        {this.hotel.push(this.lesHotels[i]);
+        return true;}
+    } 
+     return false;
+  }
   constructor(private hotelservice:HotelService ) { }
 
   ngOnInit(): void {
